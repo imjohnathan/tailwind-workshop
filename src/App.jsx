@@ -1,64 +1,81 @@
 function App() {
   return (
-    <section className="my-section">
-      <div className="my-container">
-        <div className="my-card">
-          <div className="my-card-header">
-            <h1 className="my-card-title">會員登入</h1>
-            <form className="my-form" action="#">
+    <section className="bg-gray-50">
+      <div className="mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
+        <div className="w-full rounded-lg bg-white shadow sm:max-w-md md:mt-0 xl:p-0">
+          <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
+            <h1 className="text-gray-900md:text-2xl text-xl font-bold leading-tight tracking-tight">
+              會員登入
+            </h1>
+            <form className="space-y-4 md:space-y-6" action="#">
               <div>
-                <label htmlFor="email" className="my-label">
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm font-medium text-gray-900"
+                >
                   Email
                 </label>
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  className="my-input"
+                  className="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 sm:text-sm"
                   placeholder="name@company.com"
-                  required
+                  required=""
                 />
               </div>
               <div>
-                <label htmlFor="password" className="my-label">
+                <label
+                  htmlFor="password"
+                  className="mb-2 block text-sm font-medium text-gray-900"
+                >
                   密碼
                 </label>
                 <input
                   type="password"
                   name="password"
                   id="password"
-                  className="my-input"
                   placeholder="••••••••"
-                  required
+                  className="focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 sm:text-sm"
+                  required=""
                 />
               </div>
-              <div className="my-passwordCheckbox">
-                <div className="my-passwordCheckbox__wrapper">
-                  <div className="my-passwordCheckbox__inputWrapper">
+              <div className="flex items-center justify-between">
+                <div className="flex items-start">
+                  <div className="flex h-5 items-center">
                     <input
                       id="remember"
                       aria-describedby="remember"
                       type="checkbox"
-                      className="my-checkbox"
-                      required
+                      className="focus:ring-3 focus:ring-primary-300 h-4 w-4 rounded border border-gray-300 bg-gray-50"
+                      required=""
                     />
                   </div>
-                  <div className="my-passwordCheckbox__text">
-                    <label htmlFor="remember" className="my-checkbox-label">
+                  <div className="ml-3 text-sm">
+                    <label htmlFor="remember" className="text-gray-500">
                       記住帳號
                     </label>
                   </div>
                 </div>
-                <a href="#" className="my-link">
+                <a
+                  href="#"
+                  className="text-sm font-medium text-blue-600 hover:underline"
+                >
                   忘記密碼？
                 </a>
               </div>
-              <button type="submit" className="my-button">
-                Sign in
+              <button
+                type="submit"
+                className="focus:ring-primary-300 w-full  rounded-lg bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4"
+              >
+                登入
               </button>
-              <p className="my-text">
-                還沒成為會員？{" "}
-                <a href="#" className="my-link">
+              <p className="text-sm font-light text-gray-500">
+                還不是會員嗎？{" "}
+                <a
+                  href="#"
+                  className="font-medium text-blue-600 hover:underline"
+                >
                   立即註冊
                 </a>
               </p>
