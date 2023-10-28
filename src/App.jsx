@@ -71,7 +71,7 @@ function App() {
                 登入
               </button>
               <p className="text-sm font-light text-gray-500">
-                還不是會員嗎？{" "}
+                還沒成為會員？{" "}
                 <a
                   href="#"
                   className="font-medium text-blue-600 hover:underline"
