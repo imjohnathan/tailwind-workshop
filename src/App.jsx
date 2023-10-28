@@ -54,7 +54,7 @@ function App() {
                 </a>
               </div>
               <button type="submit" className="my-button">
-                Sign in
+                登入
               </button>
               <p className="my-text">
                 還沒成為會員？{" "}

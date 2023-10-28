@@ -17,7 +17,9 @@
   width: 100%;
   background-color: #ffffff;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.05),
+    0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .my-card-header {
@@ -146,6 +148,9 @@
 }
 
 @media (min-width: 768px) {
+  .my-container {
+    height: 100vh;
+  }
   .my-card {
     margin-top: 0px;
   }
@@ -155,5 +160,12 @@
   .my-passwordCheckbox {
     flex-direction: row;
     align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .my-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
